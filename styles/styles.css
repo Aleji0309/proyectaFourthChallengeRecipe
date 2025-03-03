@@ -1,0 +1,145 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: #000000;
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --font-family: "Inter", sans-serif;
+  --font-youg: "Young", sans-serif;
+}
+
+/* Eliminar el modelo caja de css para medidas */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--stone-100);
+  font-family: var(--font-family);
+}
+
+.recipe-title {
+  font-size: 2.7rem;
+  font-family: var(--font-family);
+}
+
+.recipe-description-p {
+  color: var(--stone-600);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.secondary-title {
+  color: var(--brown-800);
+  font-size: 2rem;
+}
+
+.content-style {
+  line-height: 3rem;
+  font-size: 1.2rem;
+  color: var(--stone-600);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*min-height: 1700px;*/
+  width: 500px;
+  margin: 0 auto;
+  background-color: var(--white);
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border-radius: 2rem;
+}
+
+.main-container section {
+  width: 90%; /* Ajusta el ancho de cada sección */
+}
+
+img {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.preparation-time {
+  background-color: var(--rose-50);
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  border-radius: 0.8rem;
+}
+
+.preparation-time-title {
+  color: var(--rose-800);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.instructions-list {
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+  max-width: auto;
+  text-align: left;
+  margin-bottom: 2rem;
+  border-collapse: collapses;
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--stone-150);
+  padding: 0.8rem;
+}
+
+th {
+  font-weight: 400;
+  padding-left: 6rem;
+}
+
+td {
+  color: var(--rose-800);
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+/*Celular*/
+@media (max-width: 490px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+  }
+  .main-container {
+    width: auto;
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
